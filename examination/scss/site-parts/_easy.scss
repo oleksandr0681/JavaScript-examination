@@ -1,0 +1,74 @@
+
+.easy {
+
+}
+
+.easy-box {
+    padding: 100px 0;
+}
+
+.counts {
+    background-image: url(../img/bgCounts.jpg);
+    /* cover Масштабирует изображение с сохранением пропорций так, чтобы 
+        его ширина или высота равнялась ширине или высоте блока. */
+    background-size: cover;
+    background-position: center;
+}
+
+.counts-box {
+
+}
+
+.count {
+    width: 400px;
+    height: 150px;
+    background-color: #82b1ff;
+    @include flex(row);
+
+    &_violet {
+        background: #b388ff;
+    }
+
+    &_left {
+        width: 320px;
+        padding-left: 50px;
+        background: #80d8ff;
+        justify-content: flex-start;
+    }
+
+    &_right {
+        width: 320px;
+        padding-right: 50px;
+        background: #ea80fc;
+        justify-content: flex-end;
+    }
+
+    &__content {
+        @include flex(row);
+    }
+
+    &__picture {
+        display: block;
+        margin-right: 20px;
+    }
+
+    &__text {
+
+    }
+
+    &__line {
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+
+        &_bottom {
+            vertical-align: bottom;
+            font-size: 18px;
+        }
+
+        &_top {
+            vertical-align: top;
+            font-size: 18px;
+        }
+    }
+}

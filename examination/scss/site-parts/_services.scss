@@ -1,0 +1,55 @@
+
+.services {
+
+}
+
+.services-box {
+    margin: 100px 0;
+    @include flex();
+
+    &__item {
+        width: 800px;
+        @include shadow();
+
+        &_margin-top {
+            margin-top: 50px;
+        }
+    }
+
+    &__item-row {
+        width: 100%;
+        margin: 20px 0;
+        padding: 0 25px;
+        @include flex(row, space-between);
+    }
+
+    &__item-content {
+        @include flex(row, space-between);
+        display: none;
+
+        &_show {
+            @include flex(row, space-between);
+        }
+    }
+    
+    &__item-paragraph {
+        margin-left: 25px;
+        margin-right: 5px;
+        color: $color3;
+    }
+}
+
+.group {
+    @include flex(row);
+
+    &__picture {
+        margin-right: 25px;
+    }
+
+    &__name {
+        color: $titleColor;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+}
+

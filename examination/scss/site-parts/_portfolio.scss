@@ -1,0 +1,108 @@
+
+.portfolio {
+
+}
+
+.portfolio-box {
+    padding: 100px 0;
+    
+}
+
+.filter {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__item {
+        margin: 10px 20px;
+    }
+}
+
+.sort {
+    padding: 20px 0;
+    color: $color3;
+
+    &__select {
+
+        &_hidden {
+            display: none;
+        }
+    }
+}
+
+.personalised-select {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+
+    &__value {
+        width: 80pt;
+        border: 1px solid #001133;
+        padding: 0 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__options {
+        position: absolute;
+        background-color: #eeeeee;
+        width: 80pt;
+        display: none;
+
+        &_show {
+            display: block;
+        }
+    }
+
+    &__option {
+        padding: 5px;
+
+        &:hover {
+            background-color: #00aaaa;
+            color: white;
+            transition: background-color .4s;
+        }
+    }
+}
+
+.portfolios {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio-card {
+    margin: 50px 5px;
+    width: 650px;
+    height: 400px; /*370 + 30*/
+    // background-color: #cceedd;
+    display: none;
+
+    &_show {
+        display: block;
+    }
+
+    &__header {
+        height: 30px;
+        font-size: 20px;
+        color: $titleColor;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+
+    }
+
+    &__date {
+
+    }
+
+    &__picture {
+        width: 100%;
+        height: 100%;
+    }
+}

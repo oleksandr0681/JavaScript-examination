@@ -1,0 +1,164 @@
+
+.header {
+    background: url(../img/bgHeaderCyan.png);
+    /* cover Масштабирует изображение с сохранением пропорций так, чтобы 
+    его ширина или высота равнялась ширине или высоте блока. */
+    background-size: cover;
+    background-position: center;
+}
+
+.header-box {
+    
+}
+
+.menu-bar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &_fixed {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        background-color: #00ddcc;
+    }
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    &__picture {
+        display: block;
+    }
+
+    &__text {
+        text-transform: uppercase;
+        color: white;
+    }
+}
+
+.menu {
+
+    ul {
+        display: flex;
+    }
+
+    &__item {
+        margin: 10px 25px;
+        list-style-type: none;
+
+        &_margin-right0 {
+            margin-right: 0;
+        }
+
+        &_main {
+            
+        }
+    }
+
+    &__item a {
+        text-decoration: none;
+        display: block;
+        color: white;
+        transition: color .7s;
+    }
+
+    &__item a:hover {
+        color: #061e37;
+        transition: color .4s;
+    }
+
+    &__item_active a {
+        color: #061e37;
+    }
+
+    &__burger-btn {
+        width: 40px;
+        height: 30px;
+        border-radius: 2px;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        border: none;
+        outline: none;
+
+        span {
+            display: block;
+            width: 25px;
+            height: 4px;
+            margin-bottom: 4px;
+            background: $buttonBg;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.content-box1 {
+    padding: 170px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-box1 {
+    width: 580px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__row {
+
+    }
+
+    &__title {
+        font-size: 55px;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-size: 18px;
+        color: white;
+        line-height: 1.8;
+    }
+}
+
+.video {
+    width: 600px;
+    height: 320px;
+
+    img {
+        width: 100%;
+    }
+
+    .youtubeVideo {
+        max-width: 600px;
+        padding-bottom: 56.25%; //задаёт высоту контейнера.
+        height: 0;
+        position: relative;
+        overflow: hidden;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            // object-fit: contain;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-width: 0;
+            outline-width: 0;
+        }
+    }
+
+    video {
+        width: 100%;
+    }
+}

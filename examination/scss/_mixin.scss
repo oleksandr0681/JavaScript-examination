@@ -1,0 +1,11 @@
+
+@mixin flex($fd: column, $jc: center, $ai: center) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin  shadow() {
+    box-shadow: 0 5px 2px rgba($color: #ebebeb, $alpha: 0.5);
+}

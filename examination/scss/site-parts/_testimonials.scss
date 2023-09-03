@@ -1,0 +1,67 @@
+
+.testimonials {
+    background: url(../img/BGtestimonial.png);
+    /* cover Масштабирует изображение с сохранением пропорций так, чтобы 
+    его ширина или высота равнялась ширине или высоте блока. */
+    background-size: cover;
+    background-position: center;
+}
+
+.testimonials-box {
+    padding: 40px 0;
+    @include flex(row, space-between);
+    flex-wrap: wrap;
+
+    &__item {
+        
+    }
+}
+
+.text-box3 {
+    width: 520px;
+    @include flex(column, center, flex-start);
+
+    &__title {
+        font-size: 45px;
+        color: $titleColor2;
+        // text-transform: uppercase;
+    }
+
+    &__paragraph {
+        color: $paragraphColor2;
+        line-height: 1.8;
+    }
+}
+
+.testimonial {
+    margin: 35px 0;
+    @include flex(row, space-between);
+
+    &__picture {
+        margin-right: 50px;
+
+        img {
+            display: block;
+        }
+    }
+
+    &__text-box {
+        width: 650px;
+        min-height: 160px;
+        padding: 30px;
+        background: $background1;
+        border-radius: 5px;
+    }
+
+    &__title {
+        font-size: 18px;
+        color: $titleColor3;
+        padding-bottom: 15px;
+    }
+
+    &__paragraph {
+        font-style: italic;
+        color: $color2;
+        line-height: 1.8;
+    }
+}

@@ -1,0 +1,31 @@
+
+.footer {
+    background: $background3;
+}
+
+.footer-box {
+    padding: 100px 0;
+}
+
+.hyperlinks {
+
+    ul {
+        display: flex;
+
+        span {
+            margin: 0 20px;
+            font-weight: 900;
+            color: white;
+        }
+    }
+
+    &__item {
+        list-style-type: none;
+    }
+
+    &__item a {
+        text-decoration: none;
+        display: block;
+        color: rgba(255, 255, 255, .5);
+    }
+}
